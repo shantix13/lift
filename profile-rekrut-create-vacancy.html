@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Создание вакансии | Лифт в будущее</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <meta property="og:title" content="Лифт в будущее">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Лифт в будущее">
+    <meta property="og:image" content="img/social-pic.jpg">
+    <meta property="og:description" content="">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="icon" href="img/favicon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/select.css">
+    <link rel="stylesheet" href="css/compiled.css">
+
+</head>
+<body>
+
+<div class="page">
+
+    <main class="body">
+
+        <header class="header">
+            <div class="content">
+                <div class="header-inner">
+                    <a href="index.html" class="logo"></a>
+                    <nav class="main-menu">
+                        <ul>
+                            <li><a href="#"><span>Главная</span></a></li>
+                            <li><a href="#"><span>Обучение</span></a></li>
+                            <li><a href="#"><span>Профориентация</span></a></li>
+                            <li><a href="#"><span>Вакансии</span></a></li>
+                            <li><a href="#"><span>Контакты</span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-buttons">
+                        <div class="header-user">
+                            <div class="header-user-button">
+                                <img src="img/user.png" alt="" class="pic">
+                            </div>
+                            <div class="header-user-menu" style="display: none;">
+                                <a href="#">Профиль</a>
+                                <a href="#">Компании</a>
+                                <a class="active" href="#">Вакансии</a>
+                                <a href="#">Отклики</a>
+                                <a href="#">Выйти</a>
+                            </div>
+                        </div>
+                        <div class="button-hollow burger" data-modal="#modal-menu"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="section wow fadeIn" data-wow-offset="50">
+            <div class="content">
+
+                <h3 class="page-title">Личный кабинет</h3>
+
+                <div class="profile-navigation-block">
+                    <div class="bar-wrap">
+                        <div class="bar">
+                            <div class="profile-navigation">
+                                <a href="#"><span>Профиль</span></a>
+                                <a href="#"><span>Компании</span></a>
+                                <a class="active" href="#"><span>Вакансии</span></a>
+                                <a href="#"><span>Отклики</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select select-navigation">
+                        <select>
+                            <option value="">Профиль</option>
+                            <option value="">Компании</option>
+                            <option value="" selected>Вакансии</option>
+                            <option value="">Отклики</option>
+                        </select>
+                        <div class="select-button">
+                            <input type="text" class="select-value" value="Мои резюме" readonly>
+                            <div class="select-arrow"></div>
+                        </div>
+                        <div class="select-dropdown">
+                            <div class="select-option">Профиль</div>
+                            <div class="select-option">Компании</div>
+                            <div class="select-option active">Вакансии</div>
+                            <div class="select-option">Отклики</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section wow fadeIn" data-wow-offset="50">
+            <div class="content">
+
+                <a href="#" class="button-hollow icon-hover create-resume-back">
+                    <span class="icon icon-back"></span>
+                    К списку вакансий
+                </a>
+
+                <div class="create-resume-block">
+
+                    <div class="create-resume-section">
+                        <div class="block-title">Создание вакансии</div>
+                        <div class="grid">
+                            <div class="box">
+                                <div class="field-wrap">
+                                    <label class="field-label">
+                                        <input type="text" class="field" value="Техник по обслуживанию слаботочны..."
+                                               placeholder="Название">
+                                        <div class="label">Название:</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="field-wrap">
+                                    <label class="field-label">
+                                        <input type="text" class="field" value="МТС" placeholder="Компания">
+                                        <div class="label">Компания:</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="field-wrap">
+                                    <label class="field-label">
+                                        <input type="text" class="field" value="Москва" placeholder="Город">
+                                        <div class="label">Город:</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="field-wrap">
+                                    <label class="field-label">
+                                        <input type="text" class="field" value="Ванеева" placeholder="Улица">
+                                        <div class="label">Улица:</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="field-wrap">
+                                    <label class="field-label">
+                                        <input type="email" class="field" value="56" placeholder="Дом">
+                                        <div class="label">Дом:</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="field-wrap">
+                                    <label class="field-label">
+                                        <input type="text" class="field" value="312" placeholder="Офис">
+                                        <div class="label">Офис:</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="box full">
+                                <div class="field-wrap">
+                                    <label class="field-label">
+                                        <textarea rows="3" class="field"
+                                                  placeholder="Обязанности">Обязанности</textarea>
+                                        <div class="label">Обязанности:</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="box full">
+                                <div class="field-wrap">
+                                    <label class="field-label">
+                                        <textarea rows="3" class="field" placeholder="Требования">Требования</textarea>
+                                        <div class="label">Требования:</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="box full">
+                                <div class="field-wrap">
+                                    <label class="field-label">
+                                        <textarea rows="3" class="field" placeholder="Условия">Условия</textarea>
+                                        <div class="label">Условия:</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="box full">
+                                <div class="field-wrap">
+                                    <label class="field-label">
+                                        <textarea rows="3" class="field" placeholder="Описание">Описание</textarea>
+                                        <div class="label">Описание:</div>
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <div class="box select-box">
+                                <div class="field-wrap">
+                                    <div class="select">
+                                        <select>
+                                            <option value="" selected>Полная занятость, частичная занятость</option>
+                                            <option value="">Удаленная работа</option>
+                                            <option value="">Фриланс</option>
+                                        </select>
+                                        <div class="select-button">
+                                            <input type="text" class="select-value" value="Полная занятость, частична..." readonly>
+                                            <div class="select-arrow"></div>
+                                        </div>
+                                        <div class="select-dropdown">
+                                            <div class="select-option active">Полная занятость, частичная занятость</div>
+                                            <div class="select-option">Удаленная работа</div>
+                                            <div class="select-option">Фриланс</div>
+                                        </div>
+                                    </div>
+                                    <div class="label">Тип занятости:</div>
+                                </div>
+                            </div>
+
+                            <div class="box salary">
+                                <div class="field-wrap">
+                                    <label class="field-label">
+                                        <input type="text" class="field" value="60 000"
+                                               placeholder="Заработная плата от">
+                                        <div class="label">Заработная плата от:</div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <div class="field-wrap">
+                                    <label class="field-label">
+                                        <input type="text" class="field" value="150 000"
+                                               placeholder="Заработная плата до">
+                                        <div class="label">Заработная плата до:</div>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="create-rekrut-company-section">
+                        <div class="sub-title">Специализация:</div>
+                        <div class="panel sm">
+                            <div class="panel-remove"></div>
+                            <div class="text dark sm">
+                                <p>Розничная торговля</p>
+                            </div>
+                        </div>
+                        <div class="panel sm">
+                            <div class="panel-remove"></div>
+                            <div class="text dark sm">
+                                <p>Информационные технологии</p>
+                            </div>
+                        </div>
+                        <div class="field-wrap">
+                            <button class="button-control" data-modal="#modal-add-education">
+                                <img src="img/icons/icon-add.png" alt="">
+                                Добавить специализацию
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="create-rekrut-company-section padding-t">
+                        <div class="sub-title">Сфера деятельности:</div>
+                        <div class="field-wrap">
+                            <button class="button-control" data-modal="#modal-add-education">
+                                <img src="img/icons/icon-add.png" alt="">
+                                Добавить сферу деятельности
+                            </button>
+                        </div>
+                    </div>
+                    <div class="create-rekrut-company-section padding-t">
+                        <div class="field-wrap last-wrap">
+                            <label class="checkbox-filter blue-filter">
+                                <input type="checkbox">
+                                <span>Опубликовать</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="button lg create-resume-save">Создать вакансию</button>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer wow fadeIn">
+        <div class="content">
+            <div class="footer-inner">
+                <div class="info">2020 © Благотворительный фонд «Система»</div>
+                <a href="#" class="info">Политика конфиденциальности</a>
+                <a href="#" class="info">Пользовательское соглашение</a>
+                <div class="social-contacts">
+                    <a href="https://www.instagram.com/lift2future/?igshid=1n01c5im6d6ct" target="_blank"
+                       class="social-contact">
+                        <img src="img/icons/icon-contact-instagram-color.svg" alt="">
+                    </a>
+                    <a href="https://vk.com/lift2future" target="_blank" class="social-contact">
+                        <img src="img/icons/icon-contact-vk-color.svg" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/lift2future" target="_blank" class="social-contact">
+                        <img src="img/icons/icon-contact-facebook-color.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<div class="modals">
+
+    <div class="modal-full modal-menu" id="modal-menu">
+        <div class="modal-container">
+            <div class="modal-inner">
+                <div class="modal-body">
+                    <div class="modal-close" data-modal-close></div>
+
+                    <nav class="main-menu-modal">
+                        <ul>
+                            <li><a href="#"><span>Главная</span></a></li>
+                            <li><a href="#"><span>Обучение</span></a></li>
+                            <li><a href="#"><span>Профориентация</span></a></li>
+                            <li><a href="#"><span>Вакансии</span></a></li>
+                            <li><a href="#"><span>Контакты</span></a></li>
+                        </ul>
+                    </nav>
+
+                    <ul class="footer-menu-modal">
+                        <li><a href="#" class="info">Политика конфиденциальности</a></li>
+                        <li><a href="#" class="info">Пользовательское соглашение</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-login">
+        <div class="modal-container">
+            <div class="modal-inner">
+                <div class="modal-body">
+                    <div class="modal-close" data-modal-close></div>
+                    <div class="modal-content">
+
+                        <div class="modal-title-wrap">
+                            <h3 class="modal-title">Войти</h3>
+                            <h4 class="modal-subtitle">У вас ещё нет аккаунта?</h4>
+                            <a href="#" class="info">Зарегистрироваться сейчас</a>
+                        </div>
+                        <form id="form-login" class="form">
+                            <div class="field-wrap">
+                                <label class="field-label">
+                                    <input type="email" class="field" placeholder="Email" data-validation="email">
+                                    <div class="label">Email</div>
+                                </label>
+                            </div>
+                            <div class="field-wrap">
+                                <label class="field-label">
+                                    <input type="password" class="field" placeholder="Пароль"
+                                           data-validation="required">
+                                    <div class="label">Пароль</div>
+                                </label>
+                            </div>
+                            <button class="button orange lg">Войти</button>
+                            <a href="#" class="info">Забыли пароль?</a>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal lg" id="modal-add-education">
+        <div class="modal-container">
+            <div class="modal-inner">
+                <div class="modal-body">
+                    <div class="modal-close" data-modal-close></div>
+                    <div class="modal-content">
+
+                        <div class="modal-title-wrap">
+                            <div class="modal-title sm">Добавление образования</div>
+                        </div>
+
+                        <form class="form">
+                            <div class="field-wrap">
+                                <div class="cells">
+                                    <div class="cell">
+                                        <div class="field-wrap">
+                                            <div class="select search">
+                                                <select>
+                                                    <option value="">Высшее</option>
+                                                    <option value="">Неоконченное среднее</option>
+                                                    <option value="">Среднее</option>
+                                                    <option value="">Среднее специальное</option>
+                                                    <option value="">Неоконченное высшее</option>
+                                                    <option value="">Специалитет</option>
+                                                    <option value="">Бакалавр</option>
+                                                    <option value="">Магистр</option>
+                                                    <option value="">Кандидат наук</option>
+                                                    <option value="">Доктор наук</option>
+                                                </select>
+                                                <div class="select-button">
+                                                    <input type="text" class="select-value">
+                                                    <div class="select-arrow"></div>
+                                                </div>
+                                                <div class="select-dropdown">
+                                                    <div class="select-option">Высшее</div>
+                                                    <div class="select-option">Неоконченное среднее</div>
+                                                    <div class="select-option">Среднее</div>
+                                                    <div class="select-option">Среднее специальное</div>
+                                                    <div class="select-option">Неоконченное высшее</div>
+                                                    <div class="select-option">Специалитет</div>
+                                                    <div class="select-option">Бакалавр</div>
+                                                    <div class="select-option">Магистр</div>
+                                                    <div class="select-option">Кандидат наук</div>
+                                                    <div class="select-option">Доктор наук</div>
+                                                </div>
+                                            </div>
+                                            <div class="label">Образование</div>
+                                        </div>
+                                        <div class="field-wrap">
+                                            <label class="field-label">
+                                                <input type="text" class="field" placeholder="Специализация">
+                                                <div class="label">Специализация</div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="cell">
+                                        <div class="field-wrap">
+                                            <label class="field-label">
+                                                <input type="text" class="field" placeholder="Учебное заведение">
+                                                <div class="label">Учебное заведение:</div>
+                                            </label>
+                                        </div>
+                                        <div class="field-wrap">
+                                            <div class="select search">
+                                                <select placeholder="Год">
+                                                    <option value="">2021</option>
+                                                    <option value="">2020</option>
+                                                    <option value="">2019</option>
+                                                    <option value="">2018</option>
+                                                    <option value="">2017</option>
+                                                    <option value="">2016</option>
+                                                    <option value="">2015</option>
+                                                    <option value="">2014</option>
+                                                    <option value="">2013</option>
+                                                    <option value="">2012</option>
+                                                    <option value="">2011</option>
+                                                    <option value="">2010</option>
+                                                </select>
+                                                <div class="select-button">
+                                                    <input type="text" class="select-value">
+                                                    <div class="select-arrow"></div>
+                                                </div>
+                                                <div class="select-dropdown">
+                                                    <div class="select-option">2021</div>
+                                                    <div class="select-option">2020</div>
+                                                    <div class="select-option">2019</div>
+                                                    <div class="select-option">2018</div>
+                                                    <div class="select-option">2017</div>
+                                                    <div class="select-option">2016</div>
+                                                    <div class="select-option">2015</div>
+                                                    <div class="select-option">2014</div>
+                                                    <div class="select-option">2013</div>
+                                                    <div class="select-option">2012</div>
+                                                    <div class="select-option">2011</div>
+                                                    <div class="select-option">2010</div>
+                                                </div>
+                                            </div>
+                                            <div class="label">Год окончания</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button orange lg">Добавить</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.arcticmodal-0.3.js"></script>
+<script src="js/jquery.form-validator.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/select.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

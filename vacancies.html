@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Список вакансий | Лифт в будущее</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<meta property="og:title" content="Лифт в будущее">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="Лифт в будущее">
+	<meta property="og:image" content="img/social-pic.jpg">
+	<meta property="og:description" content="">
+
+	<meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link rel="icon" href="img/favicon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/select.css">
+    <link rel="stylesheet" href="css/compiled.css">
+
+</head>
+<body>
+
+<div class="page">
+
+	<main class="body">
+
+        <header class="header">
+            <div class="content">
+                <div class="header-inner">
+                    <a href="index.html" class="logo"></a>
+                    <nav class="main-menu">
+                        <ul>
+                            <li><a href="#"><span>Главная</span></a></li>
+                            <li><a href="#"><span>Обучение</span></a></li>
+                            <li><a href="#"><span>Профориентация</span></a></li>
+                            <li class="active"><a href="#"><span>Вакансии</span></a></li>
+                            <li><a href="#"><span>Контакты</span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-buttons">
+                        <button class="button-hollow" data-modal="#modal-login">Войти</button>
+                        <div class="button-hollow burger" data-modal="#modal-menu"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="section wow fadeIn" data-wow-offset="50">
+            <div class="content">
+
+	            <h1 class="seo-title">Найди работу или стажировку</h1>
+                <h3 class="page-title">Список вакансий</h3>
+
+                <div class="bar">
+                    <div class="search">
+                        <form>
+                            <button class="search-button"></button>
+                            <input type="text" class="search-field" placeholder="Поиск по вакансиям">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="vacancies-block">
+                    <div class="grid">
+                        <div class="box">
+	                        <!-- Если какие-то поля фильтра заполнены, то .vacancies-sidebar имеет класс .notempty -->
+                            <div class="vacancies-sidebar notempty">
+	                            <div class="vacancies-sidebar-header">
+		                            <div class="cells">
+			                            <div class="cell">
+				                            <div class="vacancies-sidebar-title">Фильтры</div>
+			                            </div>
+			                            <div class="cell">
+											<a href="#" class="vacancies-sidebar-toggle" onclick="event.preventDefault()">Показать фильтры</a>
+			                            </div>
+		                            </div>
+	                            </div>
+	                            <div class="vacancies-sidebar-body">
+		                            <form>
+			                            <!-- Если .collapse имеет класс .active, то по умолчанию он раскрыт -->
+			                            <div class="collapse active">
+				                            <div class="collapse-button">
+					                            <div class="vacancies-filter-title">Город</div>
+				                            </div>
+				                            <div class="collapse-body">
+					                            <div class="field-wrap">
+						                            <input type="text" class="field-default" placeholder="Название города">
+					                            </div>
+				                            </div>
+			                            </div>
+			                            <!-- Если .collapse имеет класс .active, то по умолчанию он раскрыт -->
+			                            <div class="collapse active">
+				                            <div class="collapse-button">
+					                            <div class="vacancies-filter-title">Компания</div>
+				                            </div>
+				                            <div class="collapse-body">
+					                            <div class="field-wrap">
+						                            <input type="text" class="field-default" placeholder="Название компании">
+					                            </div>
+				                            </div>
+			                            </div>
+			                            <!-- Если внутри .collapse какие-то поля фильтра заполнены, то .collapse имеет класс .notempty -->
+			                            <div class="collapse active notempty">
+				                            <div class="collapse-button">
+					                            <div class="vacancies-filter-title">Сфера деятельности</div>
+				                            </div>
+				                            <div class="collapse-body">
+					                            <div class="field-wrap sm">
+						                            <label class="checkbox-filter">
+							                            <input type="checkbox">
+							                            <span>Розничная торговля (12)</span>
+						                            </label>
+					                            </div>
+					                            <div class="field-wrap sm">
+						                            <label class="checkbox-filter">
+							                            <input type="checkbox" checked>
+							                            <span>Информационные технологии, системная интеграция, интернет (94)</span>
+						                            </label>
+					                            </div>
+					                            <div class="field-wrap sm">
+						                            <label class="checkbox-filter">
+							                            <input type="checkbox">
+							                            <span>Строительство, недвижимость, эксплуатация, проектирование (21)</span>
+						                            </label>
+					                            </div>
+					                            <div class="field-wrap sm">
+						                            <label class="checkbox-filter">
+							                            <input type="checkbox">
+							                            <span>Товары народного потребления (непищевые) (293)</span>
+						                            </label>
+					                            </div>
+					                            <div class="field-wrap sm">
+						                            <label class="checkbox-filter">
+							                            <input type="checkbox" checked>
+							                            <span>Услуги для бизнеса (17)</span>
+						                            </label>
+					                            </div>
+					                            <div class="field-wrap sm">
+						                            <label class="checkbox-filter">
+							                            <input type="checkbox">
+							                            <span>Финансовый сектор (88)</span>
+						                            </label>
+					                            </div>
+					                            <div class="field-wrap sm">
+						                            <label class="checkbox-filter">
+							                            <input type="checkbox">
+							                            <span>Продукты питания (33)</span>
+						                            </label>
+					                            </div>
+					                            <div class="field-wrap sm">
+						                            <label class="checkbox-filter">
+							                            <input type="checkbox">
+							                            <span>Медицина, фармацевтика, аптеки (102)</span>
+						                            </label>
+					                            </div>
+					                            <div class="field-wrap sm">
+						                            <label class="checkbox-filter">
+							                            <input type="checkbox">
+							                            <span>Промышленное оборудование, техника, станки и комплектующие (24)</span>
+						                            </label>
+					                            </div>
+					                            <div class="field-wrap sm">
+						                            <label class="checkbox-filter">
+							                            <input type="checkbox">
+							                            <span>Автомобильный бизнес (24)</span>
+						                            </label>
+					                            </div>
+					                            <div class="hide">
+						                            <div class="hide-body">
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Перевозки, логистика, склад, ВЭД (24)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Электроника, приборостроение, бытовая техника, компьютеры и оргтехника (24)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Гостиницы, рестораны, общепит, кейтеринг (24)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Металлургия, металлообработка (24)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Телекоммуникации, связь (24)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>СМИ, маркетинг, реклама, BTL, PR, дизайн, продюсирование (24)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Образовательные учреждения (24)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Тяжелое машиностроение (24)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Услуги для населения (24)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Химическое производство, удобрения (24)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Нефть и газ (24)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Государственные организации (24)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Сельское хозяйство (24)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Добывающая отрасль (24)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Энергетика (24)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>ЖКХ (24)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Лесная промышленность, деревообработка (24)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Управление многопрофильными активами (24)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Общественная деятельность, партии, благотворительность, НКО (24)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Искусство, культура (24)</span>
+								                            </label>
+							                            </div>
+						                            </div>
+						                            <div class="hide-button">
+							                            <div class="field-wrap">
+								                            <div class="vacancies-filters-toggle">Показать все</div>
+							                            </div>
+						                            </div>
+					                            </div>
+				                            </div>
+			                            </div>
+			                            <!-- Если внутри .collapse какие-то поля фильтра заполнены, то .collapse имеет класс .notempty -->
+			                            <div class="collapse notempty">
+				                            <div class="collapse-button">
+					                            <div class="vacancies-filter-title">Специализация</div>
+				                            </div>
+				                            <div class="collapse-body">
+					                            <div class="field-wrap sm">
+						                            <label class="checkbox-filter">
+							                            <input type="checkbox">
+							                            <span>Продажи (18)</span>
+						                            </label>
+					                            </div>
+					                            <div class="field-wrap sm">
+						                            <label class="checkbox-filter">
+							                            <input type="checkbox" checked>
+							                            <span>Рабочий персонал (6)</span>
+						                            </label>
+					                            </div>
+					                            <div class="field-wrap sm">
+						                            <label class="checkbox-filter">
+							                            <input type="checkbox" checked>
+							                            <span>IT, телеком (84)</span>
+						                            </label>
+					                            </div>
+					                            <div class="field-wrap sm">
+						                            <label class="checkbox-filter">
+							                            <input type="checkbox" checked>
+							                            <span>Производство (55)</span>
+						                            </label>
+					                            </div>
+					                            <div class="field-wrap sm">
+						                            <label class="checkbox-filter">
+							                            <input type="checkbox">
+							                            <span>Строительство (28)</span>
+						                            </label>
+					                            </div>
+					                            <div class="field-wrap sm">
+						                            <label class="checkbox-filter">
+							                            <input type="checkbox">
+							                            <span>Транспорт (19)</span>
+						                            </label>
+					                            </div>
+					                            <div class="field-wrap sm">
+						                            <label class="checkbox-filter">
+							                            <input type="checkbox">
+							                            <span>Начало карьеры (37)</span>
+						                            </label>
+					                            </div>
+					                            <div class="field-wrap sm">
+						                            <label class="checkbox-filter">
+							                            <input type="checkbox">
+							                            <span>Медицина (37)</span>
+						                            </label>
+					                            </div>
+					                            <div class="field-wrap sm">
+						                            <label class="checkbox-filter">
+							                            <input type="checkbox">
+							                            <span>Админ. персонал (37)</span>
+						                            </label>
+					                            </div>
+					                            <div class="field-wrap sm">
+						                            <label class="checkbox-filter">
+							                            <input type="checkbox">
+							                            <span>Маркетинг (37)</span>
+						                            </label>
+					                            </div>
+					                            <div class="hide">
+						                            <div class="hide-body">
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Бухгалтерия (37)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Банки (37)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Туризм, рестораны (37)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Авто (37)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Безопасность (37)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Управление персоналом (37)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Консультирование (37)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Наука, образование (37)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Топ-менеджмент (37)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Госслужба (37)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Закупки (37)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Юриспруденция (37)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Спорт, фитнес (37)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Искусство, медиа (37)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Инсталляция (37)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Добыча сырья (37)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Домашний персонал (37)</span>
+								                            </label>
+							                            </div>
+							                            <div class="field-wrap sm">
+								                            <label class="checkbox-filter">
+									                            <input type="checkbox">
+									                            <span>Страхование (37)</span>
+								                            </label>
+							                            </div>
+						                            </div>
+						                            <div class="hide-button">
+							                            <div class="field-wrap">
+								                            <div class="vacancies-filters-toggle">Показать все</div>
+							                            </div>
+						                            </div>
+					                            </div>
+				                            </div>
+			                            </div>
+			                            <div class="center">
+				                            <button class="vacancies-filter-apply button">Применить</button>
+				                            <a href="#" class="vacancies-filter-clear" onclick="event.preventDefault()">Очистить фильтры</a>
+			                            </div>
+		                            </form>
+	                            </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="vacancies-number">Найдено вакансий: <span>83</span></div>
+                            <div class="vacancies">
+                                <a href="#" class="vacancy">
+                                    <h4 class="vacancy-title">Менеджер проектов</h4>
+                                    <h5 class="vacancy-subtitle">Ювелирная компания «ООО Пи-Ай-Ви»</h5>
+                                    <div class="vacancy-text text">
+                                        <p>г. Москва, метро Нагорная, Серпуховско-Тимирязевская линия</p>
+                                    </div>
+                                    <div class="vacancy-info">Полная занятость, полный день</div>
+                                    <div class="vacancy-price">от 60 000 руб</div>
+                                    <span class="more-icon"></span>
+                                </a>
+                                <a href="#" class="vacancy">
+                                    <h4 class="vacancy-title">Креативный директор по развитию</h4>
+                                    <h5 class="vacancy-subtitle">ИП Скворцова Мария Вадимовна</h5>
+                                    <div class="vacancy-text text">
+                                        <p>г. Москва, Спортивная Школа №6 Кострома, микрорайон Паново...</p>
+                                    </div>
+                                    <div class="vacancy-info">Полная занятость, полный день</div>
+                                    <div class="vacancy-price">от 60 000 руб</div>
+                                    <span class="more-icon"></span>
+                                </a>
+                                <a href="#" class="vacancy">
+                                    <h4 class="vacancy-title">Копирайтер</h4>
+                                    <h5 class="vacancy-subtitle">ИП Скворцова Мария Вадимовна</h5>
+                                    <div class="vacancy-text text">
+                                        <p>г. Москва, метро Нагорная, Серпуховско-Тимирязевская линия</p>
+                                    </div>
+                                    <div class="vacancy-info">Полная занятость, полный день</div>
+                                    <div class="vacancy-price">от 60 000 руб</div>
+                                    <span class="more-icon"></span>
+                                </a>
+                                <a href="#" class="vacancy">
+                                    <h4 class="vacancy-title">Менеджер проектов</h4>
+                                    <h5 class="vacancy-subtitle">Ювелирная компания «ООО Пи-Ай-Ви»</h5>
+                                    <div class="vacancy-text text">
+                                        <p>г. Москва, метро Нагорная, Серпуховско-Тимирязевская линия</p>
+                                    </div>
+                                    <div class="vacancy-info">Полная занятость, полный день</div>
+                                    <div class="vacancy-price">от 60 000 руб</div>
+                                    <span class="more-icon"></span>
+                                </a>
+                                <a href="#" class="vacancy">
+                                    <h4 class="vacancy-title">Креативный директор по развитию</h4>
+                                    <h5 class="vacancy-subtitle">ИП Скворцова Мария Вадимовна</h5>
+                                    <div class="vacancy-text text">
+                                        <p>г. Москва, Спортивная Школа №6 Кострома, микрорайон Паново...</p>
+                                    </div>
+                                    <div class="vacancy-info">Полная занятость, полный день</div>
+                                    <div class="vacancy-price">от 60 000 руб</div>
+                                    <span class="more-icon"></span>
+                                </a>
+                                <a href="#" class="vacancy">
+                                    <h4 class="vacancy-title">Копирайтер</h4>
+                                    <h5 class="vacancy-subtitle">ИП Скворцова Мария Вадимовна</h5>
+                                    <div class="vacancy-text text">
+                                        <p>г. Москва, метро Нагорная, Серпуховско-Тимирязевская линия</p>
+                                    </div>
+                                    <div class="vacancy-info">Полная занятость, полный день</div>
+                                    <div class="vacancy-price">от 60 000 руб</div>
+                                    <span class="more-icon"></span>
+                                </a>
+                                <a href="#" class="vacancy">
+                                    <h4 class="vacancy-title">Менеджер проектов</h4>
+                                    <h5 class="vacancy-subtitle">Ювелирная компания «ООО Пи-Ай-Ви»</h5>
+                                    <div class="vacancy-text text">
+                                        <p>г. Москва, метро Нагорная, Серпуховско-Тимирязевская линия</p>
+                                    </div>
+                                    <div class="vacancy-info">Полная занятость, полный день</div>
+                                    <div class="vacancy-price">от 60 000 руб</div>
+                                    <span class="more-icon"></span>
+                                </a>
+                            </div>
+                            <ul class="pagination">
+                                <li class="disabled"><span><</span></li>
+                                <li class="active"><span>1</span></li>
+                                <li><span>2</span></li>
+                                <li><span>3</span></li>
+                                <li><span>4</span></li>
+                                <li><span>5</span></li>
+                                <li><span>6</span></li>
+                                <li><span>6</span></li>
+                                <li><span>7</span></li>
+                                <li><span>...</span></li>
+                                <li><span>15</span></li>
+                                <li><span>></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+	</main>
+
+    <footer class="footer wow fadeIn">
+        <div class="content">
+            <div class="footer-inner">
+                <div class="info">2020 © Благотворительный фонд «Система»</div>
+                <a href="#" class="info">Политика конфиденциальности</a>
+                <a href="#" class="info">Пользовательское соглашение</a>
+                <div class="social-contacts">
+					<a href="https://www.instagram.com/lift2future/?igshid=1n01c5im6d6ct" target="_blank" class="social-contact">
+						<img src="img/icons/icon-contact-instagram-color.svg" alt="">
+					</a>
+					<a href="https://vk.com/lift2future" target="_blank" class="social-contact">
+						<img src="img/icons/icon-contact-vk-color.svg" alt="">
+					</a>
+					<a href="https://www.facebook.com/lift2future" target="_blank" class="social-contact">
+						<img src="img/icons/icon-contact-facebook-color.svg" alt="">
+					</a>
+				</div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<div class="modals">
+
+    <div class="modal-full modal-menu" id="modal-menu">
+        <div class="modal-container">
+            <div class="modal-inner">
+                <div class="modal-body">
+                    <div class="modal-close" data-modal-close></div>
+
+                    <nav class="main-menu-modal">
+                        <ul>
+                            <li><a href="#"><span>Главная</span></a></li>
+                            <li><a href="#"><span>Обучение</span></a></li>
+                            <li><a href="#"><span>Профориентация</span></a></li>
+                            <li><a href="#"><span>Вакансии</span></a></li>
+                            <li><a href="#"><span>Контакты</span></a></li>
+                        </ul>
+                    </nav>
+
+                    <ul class="footer-menu-modal">
+                        <li><a href="#" class="info">Политика конфиденциальности</a></li>
+                        <li><a href="#" class="info">Пользовательское соглашение</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-login">
+        <div class="modal-container">
+            <div class="modal-inner">
+                <div class="modal-body">
+                    <div class="modal-close" data-modal-close></div>
+                    <div class="modal-content">
+
+                        <div class="modal-title-wrap">
+                            <h3 class="modal-title">Войти</h3>
+                            <h4 class="modal-subtitle">У вас ещё нет аккаунта?</h4>
+                            <a href="#" class="info">Зарегистрироваться сейчас</a>
+                        </div>
+                        <form id="form-login" class="form">
+                            <div class="field-wrap">
+                                <label class="field-label">
+                                    <input type="email" class="field" placeholder="Email" data-validation="email">
+                                    <div class="label">Email</div>
+                                </label>
+                            </div>
+                            <div class="field-wrap">
+                                <label class="field-label">
+                                    <input type="password" class="field" placeholder="Пароль" data-validation="required">
+                                    <div class="label">Пароль</div>
+                                </label>
+                            </div>
+                            <button class="button orange lg">Войти</button>
+                            <a href="#" class="info">Забыли пароль?</a>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.arcticmodal-0.3.js"></script>
+<script src="js/jquery.form-validator.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/select.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
