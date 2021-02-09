@@ -500,6 +500,7 @@ input {
 }
 textarea {
   border: none;
+  resize: none;
   font-family: 'SF Pro Display', sans-serif;
   -webkit-transition: border 0.2s ease-in-out, color 0.2s ease-in-out;
   -moz-transition: border 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -6355,6 +6356,12 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: -35px;
+  }
+  .top-btns.observe {
+    margin-top: 0;
+  }
+  .top-btns.observe .create-resume-save {
+    margin-bottom: 30px;
   }
   .top-btns .create-resume-button {
     margin-top: 0;

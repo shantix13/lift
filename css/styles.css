@@ -3877,6 +3877,12 @@ button:hover {
     justify-content: center;
     margin-top: -35px;
   }
+  .top-btns.observe {
+    margin-top: 0;
+  }
+  .top-btns.observe .create-resume-save {
+    margin-bottom: 30px;
+  }
   .top-btns .create-resume-button {
     margin-top: 0;
   }
