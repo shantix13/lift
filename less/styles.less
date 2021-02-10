@@ -4347,6 +4347,41 @@ button {
   }
 }
 
+
+.response-icon{
+  color: @color-light;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 30px;
+  position: relative;
+
+
+  &::before{
+    content: '';
+    background: url('../img/icons/icon-corner.jpg') center no-repeat;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 34px;
+    left: 50px;
+  }
+
+  img{
+    margin-right: 7px;
+    position: relative;
+    top: -1px;
+  }
+}
+
+.response-text{
+  font-size: 16px;
+  line-height: 25px;
+}
+
 // Shantix addaptive
 
 @media(max-width: 1100px){
